@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Blog | Geeky's Pad</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+    <link rel='icon' href='img\core-img\favicon.ico' type='image/x-icon' />
+    <script nonce="b70c1fdf-7ade-4bd1-9128-08dabf43f7a3">
+        (function (w, d) {
+            !function (dK, dL, dM, dN) {
+                dK[dM] = dK[dM] || {};
+                dK[dM].executed = [];
+                dK.zaraz = {
+                    deferred: [],
+                    listeners: []
+                };
+                dK.zaraz.q = [];
+                dK.zaraz._f = function (dO) {
+                    return function () {
+                        var dP = Array.prototype.slice.call(arguments);
+                        dK.zaraz.q.push({
+                            m: dO,
+                            a: dP
+                        })
+                    }
+                }
+                    ;
+                for (const dQ of ["track", "set", "debug"])
+                    dK.zaraz[dQ] = dK.zaraz._f(dQ);
+                dK.zaraz.init = () => {
+                    var dR = dL.getElementsByTagName(dN)[0]
+                        , dS = dL.createElement(dN)
+                        , dT = dL.getElementsByTagName("title")[0];
+                    dT && (dK[dM].t = dL.getElementsByTagName("title")[0].text);
+                    dK[dM].x = Math.random();
+                    dK[dM].w = dK.screen.width;
+                    dK[dM].h = dK.screen.height;
+                    dK[dM].j = dK.innerHeight;
+                    dK[dM].e = dK.innerWidth;
+                    dK[dM].l = dK.location.href;
+                    dK[dM].r = dL.referrer;
+                    dK[dM].k = dK.screen.colorDepth;
+                    dK[dM].n = dL.characterSet;
+                    dK[dM].o = (new Date).getTimezoneOffset();
+                    if (dK.dataLayer)
+                        for (const dX of Object.entries(Object.entries(dataLayer).reduce(((dY, dZ) => ({
+                            ...dY[1],
+                            ...dZ[1]
+                        })), {})))
+                            zaraz.set(dX[0], dX[1], {
+                                scope: "page"
+                            });
+                    dK[dM].q = [];
+                    for (; dK.zaraz.q.length;) {
+                        const d_ = dK.zaraz.q.shift();
+                        dK[dM].q.push(d_)
+                    }
+                    dS.defer = !0;
+                    for (const ea of [localStorage, sessionStorage])
+                        Object.keys(ea || {}).filter((ec => ec.startsWith("_zaraz_"))).forEach((eb => {
+                            try {
+                                dK[dM]["z_" + eb.slice(7)] = JSON.parse(ea.getItem(eb))
+                            } catch {
+                                dK[dM]["z_" + eb.slice(7)] = ea.getItem(eb)
+                            }
+                        }
+                        ));
+                    dS.referrerPolicy = "origin";
+                    dS.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(dK[dM])));
+                    dR.parentNode.insertBefore(dS, dR)
+                }
+                    ;
+                ["complete", "interactive"].includes(dL.readyState) ? zaraz.init() : dK.addEventListener("DOMContentLoaded", zaraz.init)
+            }(w, d, "zarazData", "script");
+        }
+        )(window, document);
+    </script>
+</head>
+
+<body id="top">
+    <!-- header-section -->
+    <header class="s-header">
+        <!-- header-logo -->
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo.png" alt="Homepage">
+            </a>
+        </div>
+        <!-- header-nav -->
+        <nav class="header-nav">
+            <!-- close-button -->
+            <a href="#0" class="header-nav__close" title="close">
+                <span>Close</span>
+            </a>
+            <div class="header-nav__content">
+                <h3>Menu</h3>
+                <ul class="header-nav__list">
+                    <li class="current">
+                        <a class="smoothscroll" href="#home" title="home">Home</a>
+                    </li>
+                    <li>
+                        <a class="smoothscroll" href="#about" title="about">About</a>
+                    </li>
+                    <!-- <li>
+                        <a class="smoothscroll" href="#services" title="services">Skills</a>
+                    </li> -->
+                    <li>
+                        <a class="smoothscroll" href="#works" title="works">Works</a>
+                    </li>
+                    <li>
+                        <a class="smoothscroll" href="blog.html" title="blog">Blog</a>
+                    </li>
+                    <li>
+                        <a class="smoothscroll" href="myspace.html" title="myspace">MySpace</a>
+                    </li>
+                    <li>
+                        <a class="smoothscroll" href="#contact" title="contact">Contact</a>
+                    </li>
+                </ul>
+                <p>
+                    <a href='https://youtu.be/xvFZjo5PgG0'>Geeks</a> unite! Together we shall conquer the world, one
+                    byte at a time!
+                </p>
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="#">
+                            <i class="fa fa-behance"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-dribbble"></i>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+        </nav>
+        <!-- menu-button -->
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text">Menu</span>
+            <span class="header-menu-icon"></span>
+        </a>
+    </header>
+
+
+    <!-- home-section -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero2-bg.png"
+        data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+        <div class="home-content">
+            <div class="row home-content__main">
+                <h3>A Personal Blog</h3>
+                <h1>Narratives</h1>
+                <div class="home-content__buttons">
+                    <a href="#contact" class="smoothscroll btn btn--stroke">Start a Project </a>
+                    <a href="#about" class="smoothscroll btn btn--stroke">More About Me </a>
+                </div>
+            </div>
+            <div class="home-content__scroll">
+                <a href="#about" class="scroll-link smoothscroll">
+                    <span>Scroll Down</span>
+                </a>
+            </div>
+            <div class="home-content__line"></div>
+        </div>
+        <ul class="home-social">
+            <li>
+                <a href="#0">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <span>Facebook</span>
+                </a>
+            </li>
+            <li>
+                <a href="#0">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <span>Twiiter</span>
+                </a>
+            </li>
+            <li>
+                <a href="#0">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <span>Instagram</span>
+                </a>
+            </li>
+            <!-- <li>
+                <a href="#0">
+                    <i class="fa fa-behance" aria-hidden="true"></i>
+                    <span>Behance</span>
+                </a>
+            </li>
+            <li>
+                <a href="#0">
+                    <i class="fa fa-dribbble" aria-hidden="true"></i>
+                    <span>Dribbble</span>
+                </a>
+            </li> -->
+        </ul>
+    </section>
+
+
+    <!-- blog-list-section -->
+    <section id="bloglist" class="s-bloglist ftco-section bg-light ftco-no-pt">
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-12 blog-entry d-flex align-items-stretch">
+                    <div class="row g-0">
+                        <div class="col-md-7">
+                            <div class="img rellax" data-rellax-speed="-5" data-rellax-min="-120" data-rellax-max="0"
+                                style="background-image: url(img/image_1.jpg);"></div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="text py-5 ps-md-5 my-lg-5">
+                                <p class="meta"><span><i class="fa fa-user me-1"></i>Admin</span> <span><i
+                                            class="fa fa-calendar me-1"></i>Jan. 30, 2021</span> <span><a href="#"><i
+                                                class="fa fa-comment me-1"></i> 3 Comments</a></span></p>
+                                <h2 class="mb-4"><a href="blog-single.html">A Journey – From Champak-Van to Hogwarts</a></h2>
+                                <p class="mb-4">Most of my friends today know me as the bookworm, always reading kinda
+                                    guy. But to be honest I wasn't this way always. Trust me, every avid reader has an
+                                    interesting story for how they fell into this ocean...</p>
+                                <p><a href="blog-single.html" class="btn-custom">Read More <span
+                                            class="ion ion-ios-arrow-round-forward ms-2"></span></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 blog-entry d-flex align-items-stretch">
+                    <div class="row g-0">
+                        <div class="col-md-7 order-md-last">
+                            <div class="img rellax" data-rellax-speed="-5" data-rellax-min="-120" data-rellax-max="0"
+                                style="background-image: url(img/image_2.jpg);"></div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="text py-5 pe-md-5 my-lg-5">
+                                <p class="meta"><span><i class="fa fa-user me-1"></i>Admin</span> <span><i
+                                            class="fa fa-calendar me-1"></i>Jan. 30, 2021</span> <span><a href="#"><i
+                                                class="fa fa-comment me-1"></i> 3 Comments</a></span></p>
+                                <h2 class="mb-4"><a href="blog-single.html">Strolling in the Gullies</a></h2>
+                                <p class="mb-4">Every time I meet my old friends they'd always be angry with me, reason being I'm so unavailable throughout the year… only plans are made but rarely meet. Coincidence was that this time a friend asked for a novel (that too being Dan Brown) so I couldn't refuse...</p>
+                                <p><a href="blog-single.html" class="btn-custom">Read More <span
+                                            class="ion ion-ios-arrow-round-forward ms-2"></span></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 blog-entry d-flex align-items-stretch">
+                    <div class="row g-0">
+                        <div class="col-md-7">
+                            <div class="img rellax" data-rellax-speed="-5" data-rellax-min="-120" data-rellax-max="0"
+                                style="background-image: url(img/image_3.jpg);"></div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="text py-5 ps-md-5 my-lg-5">
+                                <p class="meta"><span><i class="fa fa-user me-1"></i>Admin</span> <span><i
+                                            class="fa fa-calendar me-1"></i>Jan. 30, 2021</span> <span><a href="#"><i
+                                                class="fa fa-comment me-1"></i> 3 Comments</a></span></p>
+                                <h2 class="mb-4"><a href="blog-single.html">My Slam Book</a></h2>
+                                <p class="mb-4">Reconnecting with your friends from ‘back in the day’ is oddly fulfilling. A completely different time in your life. A time of laughter, craziness, heartache and tears! A time when these friends were your heart and soul...</p>
+                                <p><a href="blog-single.html" class="btn-custom">Read More <span
+                                            class="ion ion-ios-arrow-round-forward ms-2"></span></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 blog-entry d-flex align-items-stretch">
+                    <div class="row g-0">
+                        <div class="col-md-7 order-md-last">
+                            <div class="img rellax" data-rellax-speed="-5" data-rellax-min="-120" data-rellax-max="0"
+                                style="background-image: url(img/image_4.jpg);"></div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="text py-5 pe-md-5 my-lg-5">
+                                <p class="meta"><span><i class="fa fa-user me-1"></i>Admin</span> <span><i
+                                            class="fa fa-calendar me-1"></i>Jan. 30, 2021</span> <span><a href="#"><i
+                                                class="fa fa-comment me-1"></i> 3 Comments</a></span></p>
+                                <h2 class="mb-4"><a href="blog-single.html">F.R.I.E.N.D.S</a></h2>
+                                <p class="mb-4">You meet people in life basically for two reasons – either you change their life by being an inspiration to them or they change your life by being a lesson. When you form a friendship with someone, it is always a two-way road...</p>
+                                <p><a href="blog-single.html" class="btn-custom">Read More <span
+                                            class="ion ion-ios-arrow-round-forward ms-2"></span></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 blog-entry d-flex align-items-stretch">
+                    <div class="row g-0">
+                        <div class="col-md-7">
+                            <div class="img rellax" data-rellax-speed="-5" data-rellax-min="-120" data-rellax-max="0"
+                                style="background-image: url(img/image_5.jpg);"></div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="text py-5 ps-md-5 my-lg-5">
+                                <p class="meta"><span><i class="fa fa-user me-1"></i>Admin</span> <span><i
+                                            class="fa fa-calendar me-1"></i>Jan. 30, 2021</span> <span><a href="#"><i
+                                                class="fa fa-comment me-1"></i> 3 Comments</a></span></p>
+                                <h2 class="mb-4"><a href="blog-single.html">An Un-Monitored Story</a></h2>
+                                <p class="mb-4">What does a teacher expect from a class monitor as the representative of your section? Be punctual? Keep the situation under control? Bring any nuisance to the teacher's notice? These pieces of plastic (I know I'm not quite doing justice by calling them so…) hide deep stories at their backs… Not the sincere or responsible ones, but ones of notoriety and fun...</p>
+                                <p><a href="blog-single.html" class="btn-custom">Read More <span
+                                            class="ion ion-ios-arrow-round-forward ms-2"></span></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 blog-entry d-flex align-items-stretch">
+                    <div class="row g-0">
+                        <div class="col-md-7 order-md-last">
+                            <div class="img rellax" data-rellax-speed="-5" data-rellax-min="-120" data-rellax-max="0"
+                                style="background-image: url(img/image_6.jpg);"></div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="text py-5 pe-md-5 my-lg-5">
+                                <p class="meta"><span><i class="fa fa-user me-1"></i>Admin</span> <span><i
+                                            class="fa fa-calendar me-1"></i>Jan. 30, 2021</span> <span><a href="#"><i
+                                                class="fa fa-comment me-1"></i> 3 Comments</a></span></p>
+                                <h2 class="mb-4"><a href="blog-single.html">An Inspiration to Write</a></h2>
+                                <p class="mb-4">We write because we’ve been deeply moved by something we read (fantasy or non-fiction, it doesn’t matter), and we yearn to be able to replicate that feeling in what we write.
+                                    I don’t know about you, but my life was deeply affected by the stories I read when I was young...</p>
+                                <p><a href="blog-single.html" class="btn-custom">Read More <span
+                                            class="ion ion-ios-arrow-round-forward ms-2"></span></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 blog-entry d-flex align-items-stretch">
+                    <div class="row g-0">
+                        <div class="col-md-7">
+                            <div class="img rellax" data-rellax-speed="-5" data-rellax-min="-120" data-rellax-max="0"
+                                style="background-image: url(img/image_7.jpg);"></div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="text py-5 ps-md-5 my-lg-5">
+                                <p class="meta"><span><i class="fa fa-user me-1"></i>Admin</span> <span><i
+                                            class="fa fa-calendar me-1"></i>Jan. 30, 2021</span> <span><a href="#"><i
+                                                class="fa fa-comment me-1"></i> 3 Comments</a></span></p>
+                                <h2 class="mb-4"><a href="blog-single.html">SINister-6</a></h2>
+                                <p class="mb-4">No I'm not talking about those six supervillains from Spiderman, but much worse guys… the group of 6 friends we had back in the days (and we still are). And I'm not overrating ourselves, you'll see for yourselves...</p>
+                                <p><a href="blog-single.html" class="btn-custom">Read More <span
+                                            class="ion ion-ios-arrow-round-forward ms-2"></span></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- nxt-prev-page-scroll -->
+            <div class="row mt-5 pt-lg-5">
+                <div class="col text-center">
+                    <div class="block-27">
+                        <ul>
+                            <li><a href="#">&lt;</a></li>
+                            <li class="active"><span>1</span></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                            <li><a href="#">&gt;</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer-section -->
+    <footer>
+        <div class="row footer-main">
+
+            <!-- footer-description-section -->
+            <div class="col-six tab-full left footer-desc">
+                <div class="footer-logo"></div>
+                Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien
+                massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh
+                pulvinar a. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt. Quaerat voluptas
+                autem necessitatibus vitae aut.
+            </div>
+
+            <!-- footer-newsletter-section -->
+            <div class="col-six tab-full right footer-subscribe">
+                <h4>Get Notified</h4>
+                <p>Whether you’re into weird facts that almost don’t sound true (but totally are), you’ll find plenty of
+                    those here. And if you’re looking for nostalgic stories for kids to entertain them on a long road
+                    trip, we’ve got plenty of those, too!</p>
+                <div class="subscribe-form">
+                    <form id="mc-form" class="group" novalidate="true">
+                        <input type="email" value="" name="EMAIL" class="email" id="mc-email"
+                            placeholder="Email Address" required="">
+                        <input type="submit" name="subscribe" value="Subscribe">
+                        <label for="mc-email" class="subscribe-message"></label>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-bottom">
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright 2023 | TheGeekyFreak</span>
+                </div>
+
+                <!-- back-to-top-button -->
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top">
+                        <i class="icon-arrow-up" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- loader -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- preloader -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816"
+        integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw=="
+        data-cf-beacon='{"rayId":"7ddfbba36aac3390","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.4.0","si":100}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

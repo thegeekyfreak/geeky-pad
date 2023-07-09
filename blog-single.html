@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Blog-Single | Geeky's Pad</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+    <link rel='icon' href='img\core-img\favicon.ico' type='image/x-icon' />
+    <script nonce="b70c1fdf-7ade-4bd1-9128-08dabf43f7a3">
+        (function (w, d) {
+            !function (dK, dL, dM, dN) {
+                dK[dM] = dK[dM] || {};
+                dK[dM].executed = [];
+                dK.zaraz = {
+                    deferred: [],
+                    listeners: []
+                };
+                dK.zaraz.q = [];
+                dK.zaraz._f = function (dO) {
+                    return function () {
+                        var dP = Array.prototype.slice.call(arguments);
+                        dK.zaraz.q.push({
+                            m: dO,
+                            a: dP
+                        })
+                    }
+                }
+                    ;
+                for (const dQ of ["track", "set", "debug"])
+                    dK.zaraz[dQ] = dK.zaraz._f(dQ);
+                dK.zaraz.init = () => {
+                    var dR = dL.getElementsByTagName(dN)[0]
+                        , dS = dL.createElement(dN)
+                        , dT = dL.getElementsByTagName("title")[0];
+                    dT && (dK[dM].t = dL.getElementsByTagName("title")[0].text);
+                    dK[dM].x = Math.random();
+                    dK[dM].w = dK.screen.width;
+                    dK[dM].h = dK.screen.height;
+                    dK[dM].j = dK.innerHeight;
+                    dK[dM].e = dK.innerWidth;
+                    dK[dM].l = dK.location.href;
+                    dK[dM].r = dL.referrer;
+                    dK[dM].k = dK.screen.colorDepth;
+                    dK[dM].n = dL.characterSet;
+                    dK[dM].o = (new Date).getTimezoneOffset();
+                    if (dK.dataLayer)
+                        for (const dX of Object.entries(Object.entries(dataLayer).reduce(((dY, dZ) => ({
+                            ...dY[1],
+                            ...dZ[1]
+                        })), {})))
+                            zaraz.set(dX[0], dX[1], {
+                                scope: "page"
+                            });
+                    dK[dM].q = [];
+                    for (; dK.zaraz.q.length;) {
+                        const d_ = dK.zaraz.q.shift();
+                        dK[dM].q.push(d_)
+                    }
+                    dS.defer = !0;
+                    for (const ea of [localStorage, sessionStorage])
+                        Object.keys(ea || {}).filter((ec => ec.startsWith("_zaraz_"))).forEach((eb => {
+                            try {
+                                dK[dM]["z_" + eb.slice(7)] = JSON.parse(ea.getItem(eb))
+                            } catch {
+                                dK[dM]["z_" + eb.slice(7)] = ea.getItem(eb)
+                            }
+                        }
+                        ));
+                    dS.referrerPolicy = "origin";
+                    dS.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(dK[dM])));
+                    dR.parentNode.insertBefore(dS, dR)
+                }
+                    ;
+                ["complete", "interactive"].includes(dL.readyState) ? zaraz.init() : dK.addEventListener("DOMContentLoaded", zaraz.init)
+            }(w, d, "zarazData", "script");
+        }
+        )(window, document);
+    </script>
+</head>
+
+<body id="top">
+    <!-- header-section -->
+    <header class="s-header">
+        <!-- header-logo -->
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo.png" alt="Homepage">
+            </a>
+        </div>
+        <!-- header-nav -->
+        <nav class="header-nav">
+            <!-- close-button -->
+            <a href="#0" class="header-nav__close" title="close">
+                <span>Close</span>
+            </a>
+            <div class="header-nav__content">
+                <h3>Menu</h3>
+                <ul class="header-nav__list">
+                    <li class="current">
+                        <a class="smoothscroll" href="#home" title="home">Home</a>
+                    </li>
+                    <li>
+                        <a class="smoothscroll" href="#about" title="about">About</a>
+                    </li>
+                    <!-- <li>
+                        <a class="smoothscroll" href="#services" title="services">Skills</a>
+                    </li> -->
+                    <li>
+                        <a class="smoothscroll" href="#works" title="works">Works</a>
+                    </li>
+                    <li>
+                        <a class="smoothscroll" href="blog.html" title="blog">Blog</a>
+                    </li>
+                    <li>
+                        <a class="smoothscroll" href="myspace.html" title="myspace">MySpace</a>
+                    </li>
+                    <li>
+                        <a class="smoothscroll" href="#contact" title="contact">Contact</a>
+                    </li>
+                </ul>
+                <p>
+                    <a href='https://youtu.be/xvFZjo5PgG0'>Geeks</a> unite! Together we shall conquer the world, one
+                    byte at a time!
+                </p>
+                <ul class="header-nav__social">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="#">
+                            <i class="fa fa-behance"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-dribbble"></i>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+        </nav>
+        <!-- menu-button -->
+        <a class="header-menu-toggle" href="#0">
+            <span class="header-menu-text">Menu</span>
+            <span class="header-menu-icon"></span>
+        </a>
+    </header>
+
+
+    <!-- home-section -->
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.png"
+        data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+        <div class="overlay"></div>
+        <div class="shadow-overlay"></div>
+        <div class="home-content">
+            <div class="row home-content__main">
+                <!-- <h3>Welcome to Geeky's Pad</h3> -->
+                <h1>Hello <br> I'm Shaurya.</h1>
+                <h3>Designer | Developer</h3>
+                <div class="home-content__buttons">
+                    <a href="#contact" class="smoothscroll btn btn--stroke">Start a Project </a>
+                    <a href="#about" class="smoothscroll btn btn--stroke">More About Me </a>
+                </div>
+            </div>
+            <div class="home-content__scroll">
+                <a href="#about" class="scroll-link smoothscroll">
+                    <span>Scroll Down</span>
+                </a>
+            </div>
+            <div class="home-content__line"></div>
+        </div>
+        <ul class="home-social">
+            <li>
+                <a href="#0">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <span>Facebook</span>
+                </a>
+            </li>
+            <li>
+                <a href="#0">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <span>Twiiter</span>
+                </a>
+            </li>
+            <li>
+                <a href="#0">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <span>Instagram</span>
+                </a>
+            </li>
+            <li>
+                <a href="#0">
+                    <i class="fa fa-behance" aria-hidden="true"></i>
+                    <span>Behance</span>
+                </a>
+            </li>
+            <li>
+                <a href="#0">
+                    <i class="fa fa-dribbble" aria-hidden="true"></i>
+                    <span>Dribbble</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- blog-section -->
+    <section class="site-section py-lg">
+        <div class="container">
+            <div class="row blog-entries element-animate">
+                <div class="col-md-12 col-lg-8 main-content">
+                    <img src="img/img_10.jpg" alt="Image" class="img-fluid mb-5">
+                    <div class="post-meta">
+                        <span class="author mr-2"><img src="img/person_1.jpg" alt="Colorlib" class="mr-2">
+                            Colorlib</span>&bullet;
+                        <span class="mr-2">March 15, 2018 </span> &bullet;
+                        <span class="ml-2"><span class="fa fa-comments"></span> 3</span>
+                    </div>
+                    <h1 class="mb-4">A Journey – From Champak-Van to Hogwarts</h1>
+                    <a class="category mb-5" href="#">Food</a> <a class="category mb-5" href="#">Travel</a>
+                    <div class="post-content-body">
+                        <p>Most of my friends today know me as the bookworm, always reading kinda guy. But to be honest
+                            I wasn't
+                            this way always. Trust me, every avid reader has an interesting story for how they fell into
+                            this ocean.
+
+                        <p>For me it begins back when I was in class 3rd or 4th I guess, when I wasn't so interested
+                            into reading
+                            stuff, at most I'd see those Garfield, Calvin n Hobbes comic strips they issued in
+                            newspapers. Now our
+                            (I'm saying our because my brother too was dragged into this) father suddenly got too
+                            enthusiastic about this thought that reading is good for academics and your vocabulary (yes
+                            it is…) and
+                            he told us to read newspaper articles and stuff. And to make things serious, we were asked
+                            questions
+                            from the articles we read to check if we really did it or not…</p>
+
+                        <p>This went on for awhile when our reading text was promoted to "Champak"…(brings back ol'
+                            memories?)…
+                            But the reality was that our heart wasn't really I to it. To us, it was no more than the
+                            textbooks that
+                            we read to get through our exams. But maybe the bookworm had laid it eggs somewhere, cause
+                            now I got
+                            this
+                            hang of reading my literature books for a past-time. Now we come to class 5th when we were
+                            allowed to
+                            get books issued by our library too…</p>
+
+                        <p>And there was a variety of students who got them issued –
+                        <ul>
+                            <li>Those who'd go for heavy encyclopedias (mostly to show off their intellect)</li>
+                            <li>Those who tried to seem funk by taking books like Goosebumps (heck if they ever even
+                                read a page of
+                                it…)</li>
+                            <li>Those who stick with simple choices of their own (like me)</li>
+                            <li>And those who went to copy the first two types</li>
+                        </ul>
+                        </p>
+
+                        <div class="row mb-5">
+                            <div class="col-md-12 mb-4">
+                                <img src="img/img_7.jpg" alt="Image placeholder" class="img-fluid">
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <img src="img/img_9.jpg" alt="Image placeholder" class="img-fluid">
+                            </div>
+                            <div class="col-md-6 mb-4">
+                                <img src="img/img_11.jpg" alt="Image placeholder" class="img-fluid">
+                            </div>
+                        </div>
+
+                        <p>I started with Nandan & other classics (Huckleberry Finn, Oliver Twist, etc) and then moved
+                            on to
+                            Tinkle
+                            (me n my brother made a habit of buying a book from the bookstalls at railway station, every
+                            trip we
+                            had)… then Nagraj (those who don't know, he's our true indian comic book hero… Doga,
+                            Commander Dhruv etc
+                            are also there whom unfortunately we nowadays don't give much recognition)…</p>
+
+                        <p>This carried on for a while, till I got the hang of novels (this one too started as a task,
+                            but it was
+                            only me this time; the ones I began with were those heavy personality development books like
+                            Robin
+                            Sharma, etc which seemed too boring to me).</p>
+
+                        <p>Turning point was when I got The Diary Of A Wimpy Kid… oh boy that kid… (to those who relate
+                            themselves
+                            with Nobita, trust me, this boy would describe your life's story. This book has kept me
+                            hooked till
+                            date, not only to read novels but inspired me to keep a diary to pour out your crazy
+                            endeavors as well…
+                        </p>
+
+                        <p>There was a time when my parents had to force me to read… And now it's time when I've to hear
+                            a lot for
+                            this much reading… lol</p>
+
+                        <p>Talking about books how could one forget Harry Potter; whose world of magic spellbounded your
+                            belief in
+                            the wonders which might be hidden somewhere, that curiosity of searching, or finding
+                            yourself amongst
+                            the fantastic beasts, seeing yourself in your favorite house at Hogwarts (I'm a Gryffindor…
+                            just
+                            telling). Even an imagination such beautiful, an illusion of our minds so captivating; that
+                            we could
+                            live in such a dream and wish it never breaks…</p>
+
+                        <p>Or Dan Brown; whose Robert Langdon inspired me to stay curious about the details and seeing
+                            patterns
+                            everywhere, you never know what mystery you may uncover someday.</p>
+
+                        <p>Last book I read was more than an year ago, the long awaited, 'War of Lanka', by Amish
+                            Tripathi ,
+                            it's a good read too I'd say. Every book I've read has taught me something. And if I came to
+                            words to
+                            express that, it'd
+                            never end. So I'd put my pen down here… and with that, keep reading guys and evolve your
+                            hidden
+                            conscience !! Peace…✌✌</p>
+                    </div>
+                    <div class="pt-5">
+                        <p>Categories: <a href="#">Food</a>, <a href="#">Travel</a> Tags: <a href="#">#manila</a>, <a
+                                href="#">#asia</a></p>
+                    </div>
+
+                    <!-- comment-section -->
+                    <div class="pt-5">
+                        <h3 class="mb-5">6 Comments</h3>
+                        <ul class="comment-list">
+                            <li class="comment">
+                                <div class="vcard">
+                                    <img src="img/person_1.jpg" alt="Image placeholder">
+                                </div>
+                                <div class="comment-body">
+                                    <h3>Jean Doe</h3>
+                                    <div class="meta">January 9, 2018 at 2:21pm</div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum
+                                        necessitatibus,
+                                        ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure!
+                                        Quam voluptas earum
+                                        impedit necessitatibus, nihil?</p>
+                                    <p><a href="#" class="reply rounded">Reply</a></p>
+                                </div>
+                            </li>
+                            <li class="comment">
+                                <div class="vcard">
+                                    <img src="img/person_1.jpg" alt="Image placeholder">
+                                </div>
+                                <div class="comment-body">
+                                    <h3>Jean Doe</h3>
+                                    <div class="meta">January 9, 2018 at 2:21pm</div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum
+                                        necessitatibus,
+                                        ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure!
+                                        Quam voluptas earum
+                                        impedit necessitatibus, nihil?</p>
+                                    <p><a href="#" class="reply rounded">Reply</a></p>
+                                </div>
+
+                                <!-- comment-reply -->
+                                <ul class="children">
+                                    <li class="comment">
+                                        <div class="vcard">
+                                            <img src="img/person_1.jpg" alt="Image placeholder">
+                                        </div>
+                                        <div class="comment-body">
+                                            <h3>Jean Doe</h3>
+                                            <div class="meta">January 9, 2018 at 2:21pm</div>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem
+                                                laborum
+                                                necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe
+                                                enim sapiente iste iure!
+                                                Quam voluptas earum impedit necessitatibus, nihil?</p>
+                                            <p><a href="#" class="reply rounded">Reply</a></p>
+                                        </div>
+                                        <ul class="children">
+                                            <li class="comment">
+                                                <div class="vcard">
+                                                    <img src="img/person_1.jpg" alt="Image placeholder">
+                                                </div>
+                                                <div class="comment-body">
+                                                    <h3>Jean Doe</h3>
+                                                    <div class="meta">January 9, 2018 at 2:21pm</div>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        Pariatur quidem laborum
+                                                        necessitatibus, ipsam impedit vitae autem, eum officia, fugiat
+                                                        saepe enim sapiente iste
+                                                        iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+                                                    <p><a href="#" class="reply rounded">Reply</a></p>
+                                                </div>
+                                                <ul class="children">
+                                                    <li class="comment">
+                                                        <div class="vcard">
+                                                            <img src="img/person_1.jpg" alt="Image placeholder">
+                                                        </div>
+                                                        <div class="comment-body">
+                                                            <h3>Jean Doe</h3>
+                                                            <div class="meta">January 9, 2018 at 2:21pm</div>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                                Pariatur quidem laborum
+                                                                necessitatibus, ipsam impedit vitae autem, eum officia,
+                                                                fugiat saepe enim sapiente
+                                                                iste iure! Quam voluptas earum impedit necessitatibus,
+                                                                nihil?</p>
+                                                            <p><a href="#" class="reply rounded">Reply</a></p>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="comment">
+                                <div class="vcard">
+                                    <img src="img/person_1.jpg" alt="Image placeholder">
+                                </div>
+                                <div class="comment-body">
+                                    <h3>Jean Doe</h3>
+                                    <div class="meta">January 9, 2018 at 2:21pm</div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum
+                                        necessitatibus,
+                                        ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure!
+                                        Quam voluptas earum
+                                        impedit necessitatibus, nihil?</p>
+                                    <p><a href="#" class="reply rounded">Reply</a></p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="comment-form-wrap pt-5">
+                            <h3 class="mb-5">Leave a comment</h3>
+                            <form action="#" class="p-5 bg-light">
+                                <div class="form-group">
+                                    <label for="name">Name *</label>
+                                    <input type="text" class="form-control" id="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="website">Website</label>
+                                    <input type="url" class="form-control" id="website">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <input type="submit" value="Post Comment" class="btn btn-primary">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12 col-lg-4 sidebar">
+                    <div class="sidebar-box search-form-wrap">
+                        <form action="#" class="search-form">
+                            <div class="form-group">
+                                <span class="icon fa fa-search"></span>
+                                <input type="text" class="form-control" id="s"
+                                    placeholder="Type a keyword and hit enter">
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="sidebar-box">
+                        <div class="bio text-center">
+                            <img src="img/person_2.jpg" alt="Image Placeholder" class="img-fluid">
+                            <div class="bio-body">
+                                <h2>Craig David</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem facilis sunt
+                                    repellendus
+                                    excepturi beatae porro debitis voluptate nulla quo veniam fuga sit molestias minus.
+                                </p>
+                                <p><a href="#" class="btn btn-primary btn-sm rounded">Read my bio</a></p>
+                                <p class="social">
+                                    <a href="#" class="p-2"><span class="fa fa-facebook"></span></a>
+                                    <a href="#" class="p-2"><span class="fa fa-twitter"></span></a>
+                                    <a href="#" class="p-2"><span class="fa fa-instagram"></span></a>
+                                    <a href="#" class="p-2"><span class="fa fa-youtube-play"></span></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-box">
+                        <h3 class="heading">Popular Posts</h3>
+                        <div class="post-entry-sidebar">
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        <img src="img/img_1.jpg" alt="Image placeholder" class="mr-4">
+                                        <div class="text">
+                                            <h4>There’s a Cool New Way for Men to Wear Socks and Sandals</h4>
+                                            <div class="post-meta">
+                                                <span class="mr-2">March 15, 2018 </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/img_1.jpg" alt="Image placeholder" class="mr-4">
+                                        <div class="text">
+                                            <h4>There’s a Cool New Way for Men to Wear Socks and Sandals</h4>
+                                            <div class="post-meta">
+                                                <span class="mr-2">March 15, 2018 </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="img/img_1.jpg" alt="Image placeholder" class="mr-4">
+                                        <div class="text">
+                                            <h4>There’s a Cool New Way for Men to Wear Socks and Sandals</h4>
+                                            <div class="post-meta">
+                                                <span class="mr-2">March 15, 2018 </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-box">
+                        <h3 class="heading">Categories</h3>
+                        <ul class="categories">
+                            <li><a href="#">Food <span>(12)</span></a></li>
+                            <li><a href="#">Travel <span>(22)</span></a></li>
+                            <li><a href="#">Lifestyle <span>(37)</span></a></li>
+                            <li><a href="#">Business <span>(42)</span></a></li>
+                            <li><a href="#">Adventure <span>(14)</span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-box">
+                        <h3 class="heading">Tags</h3>
+                        <ul class="tags">
+                            <li><a href="#">Travel</a></li>
+                            <li><a href="#">Adventure</a></li>
+                            <li><a href="#">Food</a></li>
+                            <li><a href="#">Lifestyle</a></li>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Freelancing</a></li>
+                            <li><a href="#">Travel</a></li>
+                            <li><a href="#">Adventure</a></li>
+                            <li><a href="#">Food</a></li>
+                            <li><a href="#">Lifestyle</a></li>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Freelancing</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="mb-3 ">Related Post</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <a href="#" class="a-block sm d-flex align-items-center height-md"
+                        style="background-image: url('img/img_2.jpg'); ">
+                        <div class="text">
+                            <div class="post-meta">
+                                <span class="category">Lifestyle</span>
+                                <span class="mr-2">March 15, 2018 </span> &bullet;
+                                <span class="ml-2"><span class="fa fa-comments"></span> 3</span>
+                            </div>
+                            <h3>There’s a Cool New Way for Men to Wear Socks and Sandals</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="#" class="a-block sm d-flex align-items-center height-md"
+                        style="background-image: url('img/img_3.jpg'); ">
+                        <div class="text">
+                            <div class="post-meta">
+                                <span class="category">Travel</span>
+                                <span class="mr-2">March 15, 2018 </span> &bullet;
+                                <span class="ml-2"><span class="fa fa-comments"></span> 3</span>
+                            </div>
+                            <h3>There’s a Cool New Way for Men to Wear Socks and Sandals</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a href="#" class="a-block sm d-flex align-items-center height-md"
+                        style="background-image: url('img/img_4.jpg'); ">
+                        <div class="text">
+                            <div class="post-meta">
+                                <span class="category">Food</span>
+                                <span class="mr-2">March 15, 2018 </span> &bullet;
+                                <span class="ml-2"><span class="fa fa-comments"></span> 3</span>
+                            </div>
+                            <h3>There’s a Cool New Way for Men to Wear Socks and Sandals</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-4">
+                    <h3>About Us</h3>
+                    <p class="mb-4">
+                        <img src="img/img_1.jpg" alt="Image placeholder" class="img-fluid">
+                    </p>
+                    <p>Lorem ipsum dolor sit amet sa ksal sk sa, consectetur adipisicing elit. Ipsa harum inventore
+                        reiciendis.
+                        <a href="#">Read More</a>
+                    </p>
+                </div>
+                <div class="col-md-6 ml-auto">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h3>Latest Post</h3>
+                            <div class="post-entry-sidebar">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <img src="img/img_6.jpg" alt="Image placeholder" class="mr-4">
+                                            <div class="text">
+                                                <h4>How to Find the Video Games of Your Youth</h4>
+                                                <div class="post-meta">
+                                                    <span class="mr-2">March 15, 2018 </span> &bullet;
+                                                    <span class="ml-2"><span class="fa fa-comments"></span> 3</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="img/img_3.jpg" alt="Image placeholder" class="mr-4">
+                                            <div class="text">
+                                                <h4>How to Find the Video Games of Your Youth</h4>
+                                                <div class="post-meta">
+                                                    <span class="mr-2">March 15, 2018 </span> &bullet;
+                                                    <span class="ml-2"><span class="fa fa-comments"></span> 3</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="img/img_4.jpg" alt="Image placeholder" class="mr-4">
+                                            <div class="text">
+                                                <h4>How to Find the Video Games of Your Youth</h4>
+                                                <div class="post-meta">
+                                                    <span class="mr-2">March 15, 2018 </span> &bullet;
+                                                    <span class="ml-2"><span class="fa fa-comments"></span> 3</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-4">
+                            <div class="mb-5">
+                                <h3>Quick Links</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Travel</a></li>
+                                    <li><a href="#">Adventure</a></li>
+                                    <li><a href="#">Courses</a></li>
+                                    <li><a href="#">Categories</a></li>
+                                </ul>
+                            </div>
+                            <div class="mb-5">
+                                <h3>Social</h3>
+                                <ul class="list-unstyled footer-social">
+                                    <li><a href="#"><span class="fa fa-twitter"></span> Twitter</a></li>
+                                    <li><a href="#"><span class="fa fa-facebook"></span> Facebook</a></li>
+                                    <li><a href="#"><span class="fa fa-instagram"></span> Instagram</a></li>
+                                    <li><a href="#"><span class="fa fa-vimeo"></span> Vimeo</a></li>
+                                    <li><a href="#"><span class="fa fa-youtube-play"></span> Youtube</a></li>
+                                    <li><a href="#"><span class="fa fa-snapchat"></span> Snapshot</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="small">
+
+                        Copyright &copy;
+                        <script data-cfasync="false"
+                            src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+                        <script>document.write(new Date().getFullYear());</script> All Rights Reserved | This template
+                        is made
+                        with <i class="fa fa-heart text-danger" aria-hidden="true"></i> by <a
+                            href="https://colorlib.com" target="_blank">Colorlib</a>
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+    <!-- contact-section -->
+    <section id="contact" class="s-contact">
+        <div class="overlay"></div>
+        <div class="contact__line"></div>
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Connect with Me</h3>
+                <h1 class="display-2 display-2--light">Reach out for a new project or just say Hello</h1>
+            </div>
+        </div>
+        <div class="row contact-content" data-aos="fade-up">
+
+            <!-- section1-form -->
+            <div class="contact-primary">
+                <h3 class="h6">Send Me A Message</h3>
+                <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
+                    <fieldset>
+                        <div class="form-field">
+                            <input name="contactName" type="text" id="contactName" placeholder="Your Name" value=""
+                                minlength="2" required="" aria-required="true" class="full-width">
+                        </div>
+                        <div class="form-field">
+                            <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" value=""
+                                required="" aria-required="true" class="full-width">
+                        </div>
+                        <div class="form-field">
+                            <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value=""
+                                class="full-width">
+                        </div>
+                        <div class="form-field">
+                            <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10"
+                                cols="50" required="" aria-required="true" class="full-width"></textarea>
+                        </div>
+                        <div class="form-field">
+                            <button class="full-width btn--primary">Submit</button>
+                            <div class="submit-loader">
+                                <div class="text-loader">Sending...</div>
+                                <div class="s-loader">
+                                    <div class="bounce1"></div>
+                                    <div class="bounce2"></div>
+                                    <div class="bounce3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                <div class="message-warning">Something went wrong. Please try again.</div>
+                <div class="message-success">
+                    Your message was sent, thank you!<br>
+                </div>
+            </div>
+            <!-- section2-form -->
+            <div class="contact-secondary">
+                <div class="contact-info">
+                    <h3 class="h6 hide-on-fullwidth">Contact Info</h3>
+                    <!-- <div class="cinfo">
+                        <h5>Where to Find Us</h5>
+                        <p>
+                            1600 Amphitheatre Parkway<br>
+                            Mountain View, CA<br>94043 US
+                        </p>
+                    </div> -->
+                    <div class="cinfo">
+                        <h5>Email Us At</h5>
+                        <p>
+                            <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                data-cfemail="24474b4a504547506443484d4a50574d50410a474b49">shaurya.aryan20@gmail.com</a>
+                            <br>
+                            <a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                                data-cfemail="a6cfc8c0c9e6c1cacfc8d2d5cfd2c388c5c9cb">shaurya.aryan.ug20@nsut.ac.in</a>
+                        </p>
+                    </div>
+                    <!-- <div class="cinfo">
+                        <h5>Call Us At</h5>
+                        <p>
+                            Phone: (+63) 555 1212<br>
+                            Mobile: (+63) 555 0100<br>Fax: (+63) 555 0101
+                        </p>
+                    </div> -->
+                    <ul class="contact-social">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="#">
+                                <i class="fa fa-behance" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-dribbble" aria-hidden="true"></i>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer-section -->
+    <footer>
+        <div class="row footer-main">
+
+            <!-- footer-description-section -->
+            <div class="col-six tab-full left footer-desc">
+                <div class="footer-logo"></div>
+                Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien
+                massa, convallis a pellentesque nec, egestas non nisi. Mauris blandit aliquet elit, eget tincidunt nibh
+                pulvinar a. Nulla porttitor accumsan tincidunt. Nulla porttitor accumsan tincidunt. Quaerat voluptas
+                autem necessitatibus vitae aut.
+            </div>
+
+            <!-- footer-newsletter-section -->
+            <div class="col-six tab-full right footer-subscribe">
+                <h4>Get Notified</h4>
+                <p>Whether you’re into weird facts that almost don’t sound true (but totally are), you’ll find plenty of
+                    those here. And if you’re looking for nostalgic stories for kids to entertain them on a long road
+                    trip, we’ve got plenty of those, too!</p>
+                <div class="subscribe-form">
+                    <form id="mc-form" class="group" novalidate="true">
+                        <input type="email" value="" name="EMAIL" class="email" id="mc-email"
+                            placeholder="Email Address" required="">
+                        <input type="submit" name="subscribe" value="Subscribe">
+                        <label for="mc-email" class="subscribe-message"></label>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row footer-bottom">
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright 2023 | TheGeekyFreak</span>
+                </div>
+
+                <!-- back-to-top-button -->
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top">
+                        <i class="icon-arrow-up" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- preloader -->
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- preloader -->
+    <div id="preloader">
+        <div id="loader">
+            <div class="line-scale-pulse-out">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816"
+        integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw=="
+        data-cf-beacon='{"rayId":"7ddfbba36aac3390","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2023.4.0","si":100}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
